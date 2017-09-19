@@ -2,13 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jaja</title>
+    <title>Foto</title>
 </head>
-<header><a href="http://localhost:63342/untitled/index.html?_ijt=5e9mcbkg7h6bjm7pbasq6hq5kf">
-    <img src=http://www.hnhbhealthline.ca/eventNetwork/images/chevron-right.png alt=backarrow width=900 height=400 align=left></header>
+<header><ul>
+    <li><a class="#home" href="index.html">Homepagina</a></li>
+    <li><a href="#http://localhost:63343/untitled/3e%20pagina.html?_ijt=pncn6dog3069nae7smaiodhi0p">3epagina</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul></header>
 
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
 
-<body><style>
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+</style>
+
+<body>
+<style>
+    .container {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #b3f5ff;
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+    }
+
+    .text {
+        white-space: nowrap;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
     body, html {
         height: 100%;
     }
@@ -32,16 +102,20 @@
 
 
 </style>
+
 <div class="parallax"></div>
 
-
-<div style="height:450px;background-color:#bcfffb;-webkit-filter: opacity (10px);font-size:15px" >
-    <a href="https://nl.wikipedia.org/wiki/Ha%C3%AFti">
-        <img src=http://pop.h-cdn.co/assets/15/07/980x490/landscape_1423842844-a-10-thunderbolt-ii_2.jpg alt=flag width=900 height=400 align=left
 
 
 
 </div>
+<div class="container">
+    <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Avatar" class="image">
 
+    <div class="overlay">
+        <div class="text">dit is mijn foto</div>
+        <
+    </div>
+</div>
 </body>
 </html>
